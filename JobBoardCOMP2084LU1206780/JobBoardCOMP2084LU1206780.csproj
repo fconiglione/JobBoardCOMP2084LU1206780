@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-JobBoardCOMP2084LU1206780-2dbe3e25-f68a-49a0-a61f-9030cf9d4728</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.10" />
+  </ItemGroup>
+
+</Project>
