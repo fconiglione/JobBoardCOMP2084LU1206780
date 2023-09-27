@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using JobBoardCOMP2084LU1206780.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace JobBoardCOMP2084LU1206780.Data
@@ -9,5 +10,7 @@ namespace JobBoardCOMP2084LU1206780.Data
 			: base(options)
 		{
 		}
+		public DbSet<Company> Companies { get; set; }
+		public DbSet<JobListing> JobListings { get; set; }
 	}
 }
