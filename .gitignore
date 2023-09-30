@@ -361,3 +361,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/JobBoardCOMP2084LU1206780/Views/Shared/_Layout.cshtml
