@@ -48,7 +48,7 @@ namespace JobBoardCOMP2084LU1206780.Controllers
         // GET: JobListings/Create
         public IActionResult Create()
         {
-            ViewData["CompanyId"] = new SelectList(_context.Companies, "CompanyId", "CompanyId");
+	        ViewData["CompanyId"] = new SelectList(_context.Companies.OrderBy(c => c.Name), "CompanyId", "Name");
             return View();
         }
 
@@ -65,7 +65,8 @@ namespace JobBoardCOMP2084LU1206780.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CompanyId"] = new SelectList(_context.Companies.OrderBy(c => c.Name), "CompanyId", "Name");
+
+            ViewData["CompanyId"] = new SelectList(_context.Companies, "CompanyId", "CompanyId", jobListing.CompanyId);
             return View(jobListing);
         }
 
@@ -118,7 +119,7 @@ namespace JobBoardCOMP2084LU1206780.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CompanyId"] = new SelectList(_context.Companies, "CompanyId", "CompanyId", jobListing.CompanyId);
+			ViewData["CompanyId"] = new SelectList(_context.Companies, "CompanyId", "CompanyId", jobListing.CompanyId);
             return View(jobListing);
         }
 
