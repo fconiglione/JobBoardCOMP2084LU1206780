@@ -12,14 +12,37 @@
 	<h2>About JobQuest</h2>
 	<p>Welcome to JobQuest, your premier destination for finding the perfect job opportunity to kickstart your career or take it to the next level. We understand that the job search process can be overwhelming, and that's why we're here to simplify it for you.</p>
 	<p>At JobQuest, we bring together job seekers and employers, making the job search process efficient and hassle-free. Our mission is to connect talented individuals with the right job opportunities while helping companies find the best-fit candidates.</p>
-	<br>
 	<p><strong>Why choose JobQuest?</strong></p>
-	<ul>
+	<ul style="list-style:none;">
 		<li><strong>Extensive Job Listings:</strong> We offer a vast and diverse range of job listings from top companies across various industries.</li>
 		<li><strong>Easy Navigation:</strong> Our user-friendly platform makes it simple to search for jobs, post job openings, and manage your applications.</li>
 		<li><strong>Trusted by Job Seekers and Employers:</strong> JobQuest has earned the trust of job seekers and employers alike, ensuring you have access to quality opportunities and top talent.</li>
-		<li>?<strong>Career Resources:</strong> We provide valuable resources, tips, and advice to help you succeed in your job search and career development.</li>
+		<li><strong>Career Resources:</strong> We provide valuable resources, tips, and advice to help you succeed in your job search and career development.</li>
 	</ul>
 	<p>Join JobQuest today and embark on your journey to success. Your dream job is just a <a href="#">click</a> away!</p>
 </div>
-
+<hr>
+<div class="text-center">
+	<h2>Quote of the Day</h2>
+	<div id="quote" class="text-center">
+		<script type="text/javascript">
+			// BONUS 2
+			// API Docs sourced from: https://docs.quotable.io/
+	        async function fetchRandomQuote() {
+	            try {
+	                const response = await fetch('https://api.quotable.io/random');
+	                if (response.ok) {
+	                    const data = await response.json();
+	                    const quote = document.getElementById('quote');
+	                    quote.innerHTML = `<blockquote>${data.content}</blockquote><p>${data.author}</p>`;
+	                } else {
+	                    console.error('Failed to fetch a quote.');
+	                }
+	            } catch (error) {
+	                console.error('There has been an error:', error);
+	            }
+	        }
+	        fetchRandomQuote();
+	    </script>
+	</div>
+</div>
