@@ -7,6 +7,6 @@
 		public string Location { get; set; }
 		public string Industry { get; set; }
 
-		public List<JobListing> JobListings { get; set; }
+		public List<JobListing>? JobListings { get; set; }
 	}
 }

@@ -10,7 +10,7 @@ namespace JobBoardCOMP2084LU1206780.Data
 			: base(options)
 		{
 		}
-		public DbSet<Company> Companies { get; set; }
+		public DbSet<JobBoardCOMP2084LU1206780.Models.Company> Companies { get; set; }
 		public DbSet<JobListing> JobListings { get; set; }
 	}
 }
