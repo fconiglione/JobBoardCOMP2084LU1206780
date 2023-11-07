@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using JobBoardCOMP2084LU1206780.Data;
 using JobBoardCOMP2084LU1206780.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace JobBoardCOMP2084LU1206780.Controllers
 {
@@ -46,6 +47,7 @@ namespace JobBoardCOMP2084LU1206780.Controllers
         }
 
         // GET: JobListings/Create
+        [Authorize]
         public IActionResult Create()
         {
 	        ViewData["CompanyId"] = new SelectList(_context.Companies.OrderBy(c => c.Name), "CompanyId", "Name");
@@ -71,6 +73,7 @@ namespace JobBoardCOMP2084LU1206780.Controllers
         }
 
         // GET: JobListings/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.JobListings == null)
@@ -124,6 +127,7 @@ namespace JobBoardCOMP2084LU1206780.Controllers
         }
 
         // GET: JobListings/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.JobListings == null)
