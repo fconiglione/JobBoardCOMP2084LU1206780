@@ -24,7 +24,7 @@ namespace JobBoardCOMP2084LU1206780.Controllers
         public async Task<IActionResult> Index()
         {
               return _context.Companies != null ? 
-                          View(await _context.Companies.ToListAsync()) :
+                          View("Index", await _context.Companies.ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.Companies'  is null.");
         }
 
