@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobBoardCOMP2084LU1206780", "JobBoardCOMP2084LU1206780\JobBoardCOMP2084LU1206780.csproj", "{487610EE-662D-456C-A735-774E18A904AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobBoardCOMP2084LU1206780", "JobBoardCOMP2084LU1206780\JobBoardCOMP2084LU1206780.csproj", "{487610EE-662D-456C-A735-774E18A904AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobBoardCOMP2084LU1206780Tests", "JobBoardCOMP2084LU1206780Tests\JobBoardCOMP2084LU1206780Tests.csproj", "{0CDC91B2-A300-46AB-A9ED-6758927B19AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{487610EE-662D-456C-A735-774E18A904AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{487610EE-662D-456C-A735-774E18A904AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{487610EE-662D-456C-A735-774E18A904AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CDC91B2-A300-46AB-A9ED-6758927B19AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CDC91B2-A300-46AB-A9ED-6758927B19AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CDC91B2-A300-46AB-A9ED-6758927B19AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CDC91B2-A300-46AB-A9ED-6758927B19AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
